@@ -1,0 +1,272 @@
+<!DOCTIPE Html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo de página web</title>
+        <meta name="Author" content="Juan David Vargas Jimenez">
+        <style type = "text/css">
+
+            #iinicio { 
+                background-color: lightblue; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #inacional { 
+                background-color: black; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #iinternacional { 
+                background-color: green; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #ientretenimiento { 
+                background-color: purple; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #ideportes { 
+                background-color: orange; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #isuscripcion { 
+                background-color: blue; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #indice { 
+                background-color: lightblue;
+                width: 1091px;
+                text-align: center;
+
+            }
+
+            body{
+                text-align: justify;
+                position: absolute;
+                width: 1600px;
+            }
+            #bannerleft { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+            #snoticias { 
+                background-color: green; 
+                color: white;
+                width: 1091px; 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                height: 1253px;
+            }
+
+            #bannerright { 
+                float: right;
+            }
+
+
+
+            #bannerup { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+
+            header { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+            footer { 
+                background-color: green; 
+                color: white;
+                width: 1091px; 
+                float:left;
+                margin-left:250px;
+                top:0px;
+                left:0px;
+            }
+
+            #filaa{
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                width:33%;
+                border:1px solid #000;
+            }
+            #filab{
+
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                width:33%;
+                border:1px solid #000;
+                background:#f00;
+            }
+
+            #publi{
+                font-size: 3em;
+                text-align: center;
+                background: red;
+                padding-bottom: 800px;
+                margin-left: 600px;
+            }
+            .noticiasa{
+
+                height: 200px;
+                border-bottom:1px solid black;
+            }
+            .noticiasb{
+
+                height: 347px;
+                border-bottom:1px solid #000;
+            }
+            #nseccion{
+                background: green;
+                color: white;
+                text-align: center;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+            #destacada{
+                text-align:center;
+
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <section id = "principal">
+            <img id="bannerleft" src="imagenes/publi.jpg" />
+            <img id="bannerright" src="imagenes/publi.jpg"/>
+            <a  href="http://www.youtube.com"> <img id="bannerup" src="imagenes/publiv.jpg" /> </a>
+
+
+            <header>
+                <img src="imagenes/cabecera.jpg" />
+                <nav id = "indice">
+                    <a href="index.html" id = "iinicio">Inicio</a>
+                    <a href="nacional.html" id = "inacional">Nacional</a>
+                    <a href="internacional.html" id = "iinternacional">Internacional</a>
+                    <a href="entretenimiento.html" id = "ientretenimiento">Entretenimiento</a>
+                    <a href="deportes.html" id = "ideportes">Deportes</a>
+                    <a href="loguin.html" id = "login">login</a>
+                </nav>
+                <h1 id="nseccion"> Internacional </h1>
+
+            </header>
+
+
+
+
+
+
+            <section id = "snoticias">
+                <article id="destacada">
+                    <a href="noticia.html">	
+                        <h2>Destacada: Lorem Ipsum</h2>
+                    </a>
+                    <p><strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</strong></p>
+                </article>
+                <section id = "filaa">
+                    <article class = "noticiasa">
+                        <a href="noticia.html">
+                            <h2>Internacional: El paro desciende en Groenlandia </h2>
+                        </a>
+                        <p> Se hacerca el verano y buscan gente para picar hielo y hacer cubitos </p>
+                    </article>
+
+                    <article class = "noticiasa">
+                        <a href="noticia.html">
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasa">
+                        <a href="noticia.html">
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasa">
+                        <a href="noticia.html">
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</p>
+                    </article>
+
+                    <article class = "noticiasa">
+                        <a href="noticia.html">
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</p>
+                    </article>
+                </section>
+
+                <section id = "filab">			
+                    <article class = "noticiasb">
+                        <a href="noticia.html">
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasb">
+                        <a href="noticia.html">
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasb">
+                        <a href="noticia.html">
+                            <h2>Internacional: Cientificos descubren la cura contra la anorexia</h2>
+                        </a>
+                        <p> La cura se llama comer y se recomienda tomarla de 3 a 5 veces al día </p>
+                    </article>
+
+                </section>
+
+
+
+                <h1 id="publi" ><strong>Anunciese Aquí</strong></h1>
+            </section>
+
+            <footer> 
+                <p> mail: contacto@actualizados.com
+                    telefono: 900 232 323 132 </p>
+                <address>Calle Periodista Manuel Palacios, numero 3, 18023, Granada </address>
+                <details>
+                    <p>Diseñado para Google Chrome </p>
+					<p>Diseñado por: Juan David Vargas Jimenez </p>
+                </details>
+            </footer>
+
+
+
+        </section>
+    </body>
+</html>

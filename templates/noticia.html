@@ -1,0 +1,259 @@
+$def with (user,form,pag0,pag2,pag3,pag4)
+<!DOCTIPE Html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo de página web</title>
+        <meta name="Author" content="Juan David Vargas Jimenez">
+        <style type = "text/css">
+
+            #iinicio { 
+                background-color: lightblue; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #inacional { 
+                background-color: black; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #iinternacional { 
+                background-color: green; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #ientretenimiento { 
+                background-color: purple; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #ideportes { 
+                background-color: orange; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #isubscripcion { 
+                background-color: blue; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #indice { 
+                background-color: lightblue;
+                width: 1091px;
+                text-align: center;
+
+            }
+
+            body{
+                text-align: justify;
+                position: absolute;
+                width: 1600px;
+            }
+            #bannerleft { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+            #snoticias { 
+                background-color: lightblue; 
+                color: white;
+                width: 1091px; 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                height: 1103px;
+            }
+
+            #bannerright { 
+                float: right;
+            }
+
+
+
+            #bannerup { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+
+            header { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+            footer { 
+                background-color: lightblue; 
+                color: white;
+                width: 1091px; 
+                float:left;
+                margin-left:250px;
+                top:0px;
+                left:0px;
+            }
+
+            #filaa{
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                width:70%;
+                border:1px solid #000;
+            }
+
+            #unoticias{
+                border:1px solid #000;
+                margin-left: 770px;
+            }
+
+            #publi{
+                font-size: 3em;
+                text-align: center;
+                background: red;
+                padding-bottom: 740px;
+                margin-left: 770px;
+            }
+            .noticiasa{
+
+                border-bottom:1px solid #000;
+            }
+            .noticiasb{
+
+                height: 347px;
+                border-bottom:1px solid #000;
+            }
+            #noticia{
+                height: 800px;
+            }
+            #titulo{
+                font-size: 40px;
+            }
+            #opinion{
+                height: 220px;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <section id = "principal">
+            <img id="bannerleft" src="./static/publi.jpg" />
+            <img id="bannerright" src="./static/publi.jpg"/>
+            <a  href="http://www.youtube.com"> <img id="bannerup" src="./static/publiv.jpg" /> </a>
+
+
+            <header>
+                <img src="./static/cabecera.jpg" />
+		<div id="login">
+                        $if user == 'anonymous':
+                            <p>
+                              <form name="main" method="POST"> 
+                                      $:form.render()
+                                      <input type="submit" name="button" value="Login" />
+                              </form>
+                            </p>
+                        $else:
+                            <p>You are logged in as: $user</p>
+                            <p><a href="logout">Logout</a></p>
+			<ul>
+
+				 $if pag2!='vacio':
+                                         <li><a href=$:pag2>Atras 1</a></li>
+                                 $if pag3!='vacio':
+                                         <li><a href=$:pag3>Atras 2</a></li>
+                                 $if pag4!='vacio':
+                                         <li><a href=$:pag4>Atras 3</a></li>
+			</ul>
+                </div>
+                <nav id = "indice">
+                    <a href="index.html" id = "iinicio">Inicio</a>
+                    <a href="nacional.html" id = "inacional">Nacional</a>
+                    <a href="internacional.html" id = "iinternacional">Internacional</a>
+                    <a href="entretenimiento.html" id = "ientretenimiento">Entretenimiento</a>
+                    <a href="deportes.html" id = "ideportes">Deportes</a>
+                    <a href="subscripcion.html" id = "isubscripcion">Suscribete</a>
+                </nav>
+
+
+            </header>
+
+
+
+
+
+
+            <section id = "snoticias">
+                <section id = "filaa">
+                    <article class = "noticiasa" id = "noticia" >
+                        <h1 id="titulo"><strong>Lorem Ipsum</strong></h1>
+                        <h2 id="subtitulo"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui arcu, id semper dui. Nulla tempor leo vulputate magna condimentum vel 						venenatis turpis tempor.
+                            </em></h2>
+
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui arcu, id semper dui. Nulla tempor leo vulputate magna condimentum vel venenatis turpis tempor. 					Suspendisse convallis felis non nunc cursus a tristique est egestas. Aenean quis iaculis mauris. Mauris sed erat vel velit imperdiet facilisis quis non nisi. Pellentesque a 					arcu diam, non hendrerit ante. Praesent adipiscing mauris quis massa aliquam ullamcorper. Curabitur ligula quam, porta vel sagittis sed, auctor non leo. Vestibulum sem 				purus, viverra vel interdum quis, facilisis ut sem.</p>
+
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui arcu, id semper dui. Nulla tempor leo vulputate magna condimentum vel venenatis turpis tempor. 					Suspendisse convallis felis non nunc cursus a tristique est egestas. Aenean quis iaculis mauris. Mauris sed erat vel velit imperdiet facilisis quis non nisi. Pellentesque a 					arcu diam, non hendrerit ante. Praesent adipiscing mauris quis massa aliquam ullamcorper. Curabitur ligula quam, porta vel sagittis sed, auctor non leo. Vestibulum sem 				purus, viverra vel interdum quis, facilisis ut sem.</p>
+
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui arcu, id semper dui. Nulla tempor leo vulputate magna condimentum vel venenatis turpis tempor. 					Suspendisse convallis felis non nunc cursus a tristique est egestas. Aenean quis iaculis mauris. Mauris sed erat vel velit imperdiet facilisis quis non nisi. Pellentesque a 					arcu diam, non hendrerit ante. Praesent adipiscing mauris quis massa aliquam ullamcorper. Curabitur ligula quam, porta vel sagittis sed, auctor non leo. Vestibulum sem 				purus, viverra vel interdum quis, facilisis ut sem.</p>
+
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui arcu, id semper dui. Nulla tempor leo vulputate magna condimentum vel venenatis turpis tempor. 					Suspendisse convallis felis non nunc cursus a tristique est egestas. Aenean quis iaculis mauris. Mauris sed erat vel velit imperdiet facilisis quis non nisi. Pellentesque a 					arcu diam, non hendrerit ante. Praesent adipiscing mauris quis massa aliquam ullamcorper. Curabitur ligula quam, porta vel sagittis sed, auctor non leo. Vestibulum sem 				purus, viverra vel interdum quis, facilisis ut sem.</p>
+                    </article>
+
+                    <article class = "noticiasa" id = "opinion">
+                        <h2>Comentarios:</h2>
+                        <form action="procesar.php" method="post" id = "formulario">
+                            <textarea rows="6" cols="80"></textarea>
+                            <br>
+                            <button>Enviar</button>
+                        </form>
+
+
+                    </article>
+                </section>
+
+
+                <section id="unoticias">
+
+                    <h3><strong>Ultimas noticias</strong></h3>
+                    <a href="noticia.html"><h4>Detenidas 5 personas por intentar atracar un banco</h4></a>
+                    <a href="noticia.html"><h4>Avistado OVNI cerca de Toledo<h4></a>
+                    <a href="noticia.html"><h4> 3 muertos por colitis aguda en lo que va de mes</h4></a>
+
+                </section>
+
+                <h1 id="publi" ><strong>Anunciese Aquí</strong></h1>
+            </section>
+
+            <footer> 
+                <p> mail: contacto@actualizados.com
+                telefono: 900 232 323 132 </p>
+                <address>Calle Periodista Manuel Palacios, numero 3, 18023, Granada </address>
+                <details>
+                    <p>Diseñado para Google Chrome </p>
+					<p>Diseñado por: Juan David Vargas Jimenez </p>
+                </details>
+            </footer>
+
+
+
+        </section>
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,9 @@
+$def with (form)
+
+<form name="main" method="post">
+          <!-- valid(self, value), es un método de Validator(self, msg, test, jstest=None)
+          y de regexp(self, rexp, msg), que hacen parte del type Textbox -->
+        $if not form.valid: <p class="error">El formulario no es correcto, intente rellenarlo de nuevo:</p>
+        $:form.render()
+        
+</form>

@@ -1,0 +1,73 @@
+<%inherit file='datos.html'/>
+
+
+<%def name='filaa()'>
+                    <article class = "noticiasa">
+
+                            <h2>Entretenimiento: Los perros también vuelan</h2>
+                        </a>
+                        <p> Nueva aerolinea perruna. Los vuelos Nueva York-Maracena agotados hasta el 2014</p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</p>
+                    </article>
+</%def>
+
+<%def name='filab()'>
+			
+                    <article class = "noticiasb">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasb">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasb">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+</%def>
+
+<%def name='unoticias()'>
+
+		
+
+</%def>
+
+
+

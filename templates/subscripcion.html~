@@ -1,0 +1,23 @@
+<%inherit file='datos.html'/>
+
+
+<%def name='filab()'>
+
+</%def>
+
+<%def name='filaa()'>
+	<form id="main" name="registro" method="POST"> 
+                ${subscripcion}
+		<input type="submit" name="button" value="Login" />
+        </form>
+
+</%def>
+
+<%def name='unoticias()'>
+
+
+		
+
+</%def>
+
+

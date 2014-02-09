@@ -1,0 +1,69 @@
+<%inherit file='datos.html'/>
+
+<%def name='filaa()'>
+                    <article class = "noticiasa">
+
+                            <h2>Deportes: David Meca renuncia huye de España</h2>
+                        </a>
+                        <p> Nado por aguas oscuras del gobierno y descubrió el cuerpo congelado de Walt Disney </p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</p>
+                    </article>
+
+                    <article class = "noticiasa">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet</p>
+                    </article>
+</%def>
+<%def name='filab()'>
+
+			
+                    <article class = "noticiasb">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasb">
+
+                            <h2>Lorem Ipsum</h2>
+                        </a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis sem. Morbi lectus quam, facilisis vitae placerat sit amet </p>
+                    </article>
+
+                    <article class = "noticiasb">
+
+                            <h2>Deportes: El madrid y el barcelona logran una remontada histórica</h2>
+                        </a>
+                        <p> Invocaron la victoria gracias a las bolas de dragón y un pacto de sangre con el Fari, que en paz descanse </p>
+                    </article>
+</%def>
+
+<%def name='unoticias()'>
+
+		
+
+</%def>
+

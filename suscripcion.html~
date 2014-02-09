@@ -1,0 +1,271 @@
+<!DOCTIPE Html>
+<html lang="es">
+	<head>
+			<meta charset="utf-8">
+			<title>Ejemplo de página web</title>
+			<meta name="Author" content="Juan David Vargas Jimenez">
+			<style type = "text/css">
+
+				#iinicio { 
+					background-color: lightblue; 
+					color: white; 
+					font-size: 2em;
+					}
+
+				#inacional { 
+					background-color: black; 
+					color: white; 
+					font-size: 2em;
+					}
+
+				#iinternacional { 
+					background-color: green; 
+					color: white; 
+					font-size: 2em;
+					}
+
+				#ientretenimiento { 
+					background-color: purple; 
+					color: white; 
+					font-size: 2em;
+					}
+
+				#ideportes { 
+					background-color: orange; 
+					color: white; 
+					font-size: 2em;
+					}
+
+				#isuscripcion { 
+					background-color: blue; 
+					color: white; 
+					font-size: 2em;
+					}
+
+				#indice { 
+					background-color: lightblue;
+					width: 1091px;
+					text-align: center;
+
+					}
+
+				body{
+					text-align: justify;
+					position: absolute;
+					width: 1600px;
+					}
+				#bannerleft { 
+					float:left;
+					position:relative;
+					top:0px;
+					left:0px;
+					}
+
+				#snoticias { 
+					background-color: blue; 
+					color: white;
+					width: 1091px; 
+					float:left;
+					position:relative;
+					top:0px;
+					left:0px;
+					height: 1253px;
+					}
+
+				#bannerright { 
+					float: right;
+					}
+
+
+
+				#bannerup { 
+					float:left;
+					position:relative;
+					top:0px;
+					left:0px;
+					}
+
+
+				header { 
+					float:left;
+					position:relative;
+					top:0px;
+					left:0px;
+					}
+
+				footer { 
+					background-color: blue; 
+					color: white;
+					width: 1091px; 
+					float:left;
+					margin-left:250px;
+					top:0px;
+					left:0px;
+					}
+
+				#filaa{
+					float:left;
+					position:relative;
+					top:0px;
+					left:0px;
+					width:33%;
+					border:1px solid #000;
+					}
+				#filab{
+
+					float:left;
+					position:relative;
+					top:0px;
+					left:0px;
+					width:33%;
+					border:1px solid #000;
+					background:#f00;
+					}
+
+				#publi{
+					font-size: 3em;
+					text-align: center;
+					background: red;
+					padding-bottom: 800px;
+					margin-left: 600px;
+					}
+				.noticiasa{
+
+					height: 200px;
+					border-bottom:1px solid black;
+					}
+				.noticiasb{
+
+					height: 347px;
+					border-bottom:1px solid #000;
+					}
+				#nseccion{
+					background: blue;
+					color: white;
+					text-align: center;
+					padding-top: 3px;
+					padding-bottom: 3px;
+					}
+				#formulario{
+					margin-right: 400px;
+					margin-top: 200px;
+					text-align:right;
+					}
+				#condiciones{
+					font-size: 8px;
+					text-align:center;
+					}
+				#registrar{
+					text-align: center;
+					}
+
+
+			</style>
+
+	</head>
+	
+	<body>
+<section id = "principal">
+		<img id="bannerleft" src="imagenes/publi.jpg" />
+		<img id="bannerright" src="imagenes/publi.jpg"/>
+		<a  href="http://www.youtube.com"> <img id="bannerup" src="imagenes/publiv.jpg" /> </a>
+
+
+		<header>
+			<img src="imagenes/cabecera.jpg" />
+			<nav id = "indice">
+					<a href="inicio.html" id = "iinicio">Inicio</a>
+					<a href="nacional.html" id = "inacional">Nacional</a>
+					<a href="internacional.html" id = "iinternacional">Internacional</a>
+					<a href="entretenimiento.html" id = "ientretenimiento">Entretenimiento</a>
+					<a href="deportes.html" id = "ideportes">Deportes</a>
+					<a href="suscripcion.html" id = "isuscripcion">Suscribete</a>
+			</nav>
+			
+		</header>
+
+
+
+
+
+
+		<section id = "snoticias">
+
+			<form action="procesar.php" method="post" id = "formulario">
+			<label for="campoDeTexto1">Nombre:</label>
+			<input type = “text" id = "campoDeTexto1" name="campoDeTexto1" value = "introduzca el nombre" />
+			<br>
+			<br>
+			<br>
+			<label for="campoDeTexto2">Apellidos:</label>
+			<input type = “text" id = "campoDeTexto2" name="campoDeTexto2" value = "introduzca los apellidos" size= "20" />
+			<br>
+			<br>
+			<br>
+			<label for="campoDeTexto3">Direccion:</label>
+			<input type = “text" id = "campoDeTexto3" name="campoDeTexto3" value = "introduzca su direccion" size= "40"/>
+			<br>
+			<br>
+			<br>
+			<label for="campoDeTexto4">Telefono:</label>
+			<input type = “text" id = "campoDeTexto4" name="campoDeTexto4" value = "numero de telefono"/>
+			<br>
+			<br>
+			<br>
+			<label for="campoDeTexto5">Correo:</label>
+			<input type = “text" id = "campoDeTexto5" name="campoDeTexto5" value = "direccion de correo"/>
+			<br>
+			<br>
+			<br>
+			<label for="campoDeTexto6">Contraseña:</label>
+			<input type = “text" id = "campoDeTexto6" name="campoDeTexto6" value = "introduzca contraseña"/>
+			<br>
+			<br>
+			<br>
+			<label for="campoDeTexto7">Confirmar Contraseña:</label>
+			<input type = “text" id = "campoDeTexto7" name="campoDeTexto7" value = "introduzca contraseña de nuevo"/>
+			<br>
+			<br>
+			<br>
+			<label for="lista1">Fecha de nacimiento: </label>
+			<input type = "date" id = "lista1" name="lista1" />
+			<br>
+			<br>
+			<br>
+			<label for = "aceptar">Acepto las condiciones de uso: </label> 
+			<input type = "checkbox" id = “aceptar" value = “aceptar" />
+			<br>
+			<br>
+			<br>
+
+
+			</form>
+
+			<h1>Condiciones de uso: </h1> 
+			<br>
+
+			<p id="condiones"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui arcu, id semper dui. Nulla tempor leo vulputate magna condimentum vel venenatis turpis 					tempor. Suspendisse convallis felis non nunc cursus a tristique est egestas. Aenean quis iaculis mauris. Mauris sed erat vel velit imperdiet facilisis quis non nisi. 					Pellentesque a arcu diam, non hendrerit ante. Praesent adipiscing mauris quis massa aliquam ullamcorper. Curabitur ligula quam, porta vel sagittis sed, auctor non leo. 				Vestibulum sem purus, viverra vel interdum quis, facilisis ut sem.Fusce interdum gravida risus, in iaculis lorem malesuada vel. Praesent non magna non neque mattis blandit. 					Etiam nec ligula leo. Nulla luctus faucibus metus vel sodales. Sed risus enim, dignissim in vestibulum a, faucibus et dolor. In sagittis eleifend ligula vel rutrum. 					Pellentesque ac elementum dui. Curabitur commodo lacus eu elit tristique varius. Integer aliquam eleifend odio, eget eleifend magna sodales sed. Curabitur tempor semper 					tellus, euismod gravida risus sagittis id. Vivamus ut nunc ligula, a vestibulum augue. Aliquam erat volutpat. Duis a metus nibh, vel commodo quam. Praesent eget velit quis 					quam congue commodo. Vestibulum volutpat pellentesque lobortis.
+			</p>
+			<br>
+			<br>
+			<br>
+
+			<button id="registrar">
+			registrar
+			</button>
+
+
+		</section>
+
+		<footer> 
+			<p> mail: contacto@actualizados.com
+			telefono: 900 232 323 132 </p>
+			<address>Calle Periodista Manuel Palacios, numero 3, 18023, Granada </address>
+			<details>
+			<p>Diseñado para Google Chrome </p>
+			</details>
+		</footer>
+		
+
+
+</section>

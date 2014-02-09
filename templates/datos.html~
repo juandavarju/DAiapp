@@ -1,0 +1,59 @@
+<%inherit file='base.html'/>
+
+<%def name='grafico()'>
+        ${next.grafico()}
+</%def>
+
+<%def name='formulario()'>
+        % if user=='anonymous':
+                <form id="main" method="post">
+                        ${formLogin}
+                         <input type="submit" name="button" value="Login" />        
+                </form>
+        % else:
+                          <p>You are logged in as: ${user}</p>
+                    <p><a href="logout">Logout</a></p>
+        % endif
+</%def>
+
+<%def name='menu()'>
+	<ul>
+		% if pag2!='vacio':
+                	<li><a href=${pag2}>Atras 1</a></li>
+        	%endif
+       		% if pag3!='vacio':
+                	<li><a href=${pag3}>Atras 2</a></li>
+        	%endif
+        	% if pag4!='vacio':
+                	<li><a href=${pag4}>Atras 3</a></li>
+       		%endif
+	</ul>
+                    <a href="index.html" id = "iinicio">Inicio</a>
+                    <a href="nacional.html" id = "inacional">Nacional</a>
+                    <a href="internacional.html" id = "iinternacional">Internacional</a>
+                    <a href="entretenimiento.html" id = "ientretenimiento">Entretenimiento</a>
+                    <a href="deportes.html" id = "ideportes">Deportes</a>
+                    <a href="subscripcion.html" id = "isubscripcion">Subscribete</a>
+		    <a href="chart.html">Grafico</a>
+</%def>
+
+
+
+<%def name='filaa()'>
+
+                 ${next.filaa()}
+</%def>
+
+<%def name='filab()'>
+
+		${next.filab()}
+
+</%def>
+
+<%def name='unoticias()'>
+
+		${next.unoticias()}
+
+</%def>
+
+

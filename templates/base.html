@@ -1,0 +1,215 @@
+## File: templates/index.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+                <title>Ejercicio 2 de la practica 1 de DAI</title>
+
+                <style type = "text/css">
+	    #map-canvas { height: 500px }
+
+            #iinicio { 
+                background-color: lightblue; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #inacional { 
+                background-color: black; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #iinternacional { 
+                background-color: green; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #ientretenimiento { 
+                background-color: purple; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #ideportes { 
+                background-color: orange; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #isubscripcion { 
+                background-color: blue; 
+                color: white; 
+                font-size: 2em;
+            }
+
+            #indice { 
+                background-color: lightblue;
+                width: 1091px;
+                text-align: center;
+
+            }
+
+            body{
+                text-align: justify;
+                position: absolute;
+                width: 1600px;
+            }
+            #bannerleft { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+            #snoticias { 
+                background-color: lightblue; 
+                color: white;
+                width: 1091px; 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                height: 1103px;
+            }
+
+            #bannerright { 
+                float: right;
+            }
+
+
+
+            #bannerup { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+
+            header { 
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+            }
+
+            footer { 
+                background-color: lightblue; 
+                color: white;
+                width: 1091px; 
+                float:left;
+                margin-left:250px;
+                top:0px;
+                left:0px;
+            }
+
+            #filaa{
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                width:33%;
+                border:1px solid #000;
+            }
+            #filab{
+
+                float:left;
+                position:relative;
+                top:0px;
+                left:0px;
+                width:33%;
+                border:1px solid #000;
+                background:#f00;
+            }
+            #unoticias{
+                border:1px solid #000;
+                margin-left: 600px;
+            }
+
+            #publi{
+                font-size: 3em;
+                text-align: center;
+                background: red;
+                padding-bottom: 600px;
+                margin-left: 600px;
+            }
+            .noticiasa{
+
+                height: 200px;
+                border-bottom:1px solid #000;
+            }
+            .noticiasb{
+
+                height: 347px;
+                border-bottom:1px solid #000;
+            }
+
+
+        </style>
+	${next.grafico()}
+        </head>
+        <body>
+<div id="chart_div"></div>
+                <section id="principal">
+			
+			<img id="bannerleft" src="./static/publi.jpg"/>
+            		<img id="bannerright" src="./static/publi.jpg"/>
+            		<a  href="http://www.youtube.com"> <img id="bannerup" src="./static/publiv.jpg" /> </a>
+                <header id="cabecera">
+                	<img src="./static/cabecera.jpg" />
+                        ${next.formulario()}
+		<nav id= "indice">
+			 ${next.menu()}
+		</nav>
+                </header>
+
+
+		
+                <section id="snoticias">
+                        
+                        
+                	<section id="filaa">
+                        ${next.filaa()}
+                  	</section>
+
+                	<section id="filab">
+                        ${next.filab()}
+                  	</section>
+
+                	<section id="filab">
+                        ${next.filab()}
+                  	</section>
+
+                	<section id="unoticias">
+                        ${next.unoticias()}
+                  	</section>
+                        
+                </section>
+		<section>
+			<h1> RSS: El Pais </h1>
+			<ul><a href = ${rss11}> ${rss1}</a></ul>
+			<br>
+			<ul><a href = ${rss21}> ${rss2}</a></ul>
+			<br>
+			<ul><a href = ${rss31}> ${rss3}</a></ul>
+
+
+
+
+		</section>
+                
+            <footer> 
+                <p> mail: contacto@actualizados.com
+                telefono: 900 232 323 132 </p>
+                <address>Calle Periodista Manuel Palacios, numero 3, 18023, Granada </address>
+                <details>
+                    <p>Diseñado para Google Chrome </p>
+					<p>Diseñado por: Juan David Vargas Jimenez </p>
+                </details>
+            </footer>
+                </section>
+        </body>
+</html>
